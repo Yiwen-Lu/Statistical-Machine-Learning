@@ -1,2 +1,2 @@
 # Statistical Machine Learning
-My Exercises on Statistical Machine Learning with Application in R
+My Exercises & Reviews on Statistical Machine Learning with Application in R
