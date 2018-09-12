@@ -21,7 +21,7 @@ KNN_prediction <- function(x, y, K, x0) {
   for (i in 1:n0) {
     dist_x0i <- dist(x, x0[i])
     rk <- rank(dist_x0i, ties.method = "random")
-    idx_nn <- which(rk <= K)
+    idx_nn <- which(rk <= K)  # get index of NNs
     pred$y0[i] <- mean(y[idx_nn])
   }
   return(pred)
