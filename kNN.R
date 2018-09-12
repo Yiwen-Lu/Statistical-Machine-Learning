@@ -1,6 +1,6 @@
 rm(list = ls())
 
-work_dir <- "./Documents/Vorlesung/SoSe2018/MLinR/RT2_kNN"
+work_dir <- "./RT2_kNN"
 setwd(work_dir)
 set.seed(42)
 
