@@ -21,7 +21,11 @@ KNN_prediction <- function(x, y, K, x0) {
   for (i in 1:n0) {
     dist_x0i <- dist(x, x0[i])
     rk <- rank(dist_x0i, ties.method = "random")
-    idx_nn <- which(rk <= K)  # get index of NNs
+    idx_nn <- which(rk <= K)  # get indices of NNs
+    "
+    prediction is Pr(y=1),  if y is binary, i.e. {0,1};
+    prediction is the mean, if y is continuous.
+    "
     pred$y0[i] <- mean(y[idx_nn])
   }
   return(pred)
