@@ -61,9 +61,8 @@ pred4 <-KNN_prediction(dep[1:10000], arr[1:10000], 50, x0)
 
 # plot -----------------------------------------------
 plot(x = pred1$x0, y = pred1$y0, type = "l", col = "blue", ylim = c(0, 60),
-     xlab = "flight delay at arrival", ylab = "flight delay at departure")
+     xlab = "flight delay at departure", ylab = "flight delay at arrival")
 # add lines:
 lines(x = pred2$x0, y = pred2$y0, col = "green")
 lines(x = pred3$x0, y = pred3$y0, col = "pink")
 lines(x = pred4$x0, y = pred4$y0, col = "orange")
-
