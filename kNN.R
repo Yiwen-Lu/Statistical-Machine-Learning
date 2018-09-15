@@ -46,7 +46,7 @@ print(pred)
 file <- "flights_small.csv"
 flights_small <- read.table(file, sep = ',', header = TRUE)
 
-View(flights_small)
+#View(flights_small)
 summary(flights_small)
 
 arr <- flights_small$arr_delay
