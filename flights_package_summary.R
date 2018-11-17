@@ -2,7 +2,7 @@
 rm(list = ls())
 
 # install package:
-install.packages("nycflights13")
+# install.packages("nycflights13")
 
 # load package:
 library(nycflights13)
